@@ -18,22 +18,18 @@ gem "jekyll-theme-hydejack", "~> 9.1"
 
 # gem "jekyll-theme-hydejack", git: "https://github.com/hydecorp/hydejack-pro", tag: "pro/v9.2.0"
 
-# IMPORTANT: The followign gem is used to compile math formulas to 
-# KaTeX during site building.
+# IMPORTANT: Math formula support requires a JavaScript runtime.
 #
-# There are a couple of things to know about this gem:
-# *  It is not supported on GitHub Pages. 
-#    You have to build the site on your machine before uploading to GitHub,
-#    or use a more permissive cloud building tool such as Netlify.
-# *  You need some kind of JavaScript runtime on your machine.
-#    Usually installing NodeJS will suffice. 
-#    For details, see <https://github.com/kramdown/math-katex#documentation>
+# KaTeX is NOT supported on GitHub Pages (requires local build).
+# For GitHub Pages, either:
+# 1. Remove math support (comment out both lines below)
+# 2. Use MathJax (client-side, no build-time compilation needed)
 #
-# If you're using the MathJax math engine instead, free to remove the line below:
-gem "kramdown-math-katex"
-
-# A JavaScript runtime for Ruby that helps with running the katex gem above.
-gem "duktape"
+# Since we're deploying to GitHub Pages, we're disabling KaTeX support.
+# If you need math formulas, use MathJax syntax instead (client-side rendering).
+#
+# gem "kramdown-math-katex"
+# gem "duktape"
 
 # Required for `jekyll serve` in Ruby 3
 gem "webrick"
