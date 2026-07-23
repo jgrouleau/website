@@ -309,7 +309,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - functions
-  - example
 include:
   - _routes.json
   - .well-known
