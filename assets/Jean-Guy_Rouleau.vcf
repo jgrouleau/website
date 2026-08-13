@@ -1,0 +1,32 @@
+---
+layout: null
+permalink: /assets/Jean-Guy_Rouleau.vcf
+---
+{% assign r = site.data.resume.basics -%}
+{% assign name_parts = r.name | split: " " -%}
+{% assign last_name = name_parts | last -%}
+{% assign first_names = name_parts | pop | join: " " -%}
+BEGIN:VCARD
+VERSION:3.0
+FN:{{ r.name }}
+N:{{ last_name }};{{ first_names }};;;
+{% if r.label != blank -%}
+TITLE:{{ r.label }}
+{% endif -%}
+{% if r.email != blank -%}
+EMAIL;TYPE=INTERNET,WORK:{{ r.email }}
+{% endif -%}
+{% if r.phone != blank -%}
+TEL;TYPE=CELL:{{ r.phone }}
+{% endif -%}
+{% if r.website != blank -%}
+URL:{{ r.website }}
+{% endif -%}
+{% if r.location -%}
+{% assign loc = r.location -%}
+ADR;TYPE=WORK:;;{{ loc.address }};{{ loc.city }};{{ loc.region }};{{ loc.postalCode }};{{ loc.countryCode }}
+{% endif -%}
+{% if r.summary != blank -%}
+NOTE:{{ r.summary | strip_newlines | replace: '  ', ' ' | truncate: 300 }}
+{% endif -%}
+END:VCARD
