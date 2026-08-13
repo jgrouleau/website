@@ -28,7 +28,7 @@ description:           >
   My digital home on the web. A place where I share my thoughts, ideas, and projects with the world.
 
 # A shorter description for the sidebar.
-tagline:               Project/Program/Portfolio Management (P3M), Digital Transformation, Cybersecurity
+tagline:               Project/Program/Portfolio Management, Digital Transformation, Cybersecurity
 
 # A list of keywords for your blog
 keywords:              [project management, program management, portfolio management, digital transformation, cybersecurity]
@@ -54,8 +54,8 @@ menu:
     url:               /projects/
   - title:             CV / Résumé
     url:               /cv/
-  - title:             Documentation
-    url:               /docs/
+  - title:             About Me
+    url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
