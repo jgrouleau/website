@@ -1,47 +1,17 @@
 ---
-layout: page
-title: Thank You!
+layout: welcome
+title: Under Construction!
 sitemap: false
 ---
 
-Thank you for buying the PRO version of Hydejack! 🎉
+Thank you for checking out my little corner of the web.
 
-More than one year ago I was looking for a blogging platform but couldn't find it:
-One that would let me write posts in markdown with my own editor,
-one that didn't look awful buy modern design standards, and one that felt snappy on a mobile phone.
-That and more is now Hydejack. I hope you enjoy it [as much as I do](https://qwtel.com/).
+You're free to look around, but do note that this is still in development, and so you might still see some placeholder content. Your patience while I juggle work and home life with 2 young kids, with learning to use Github Pages, Jekyll, and Liquid, is very much appreciated. 
 
-## First Steps
-Start by reading the [Documentation]{:.heading.flip-title}.
-Specifically, the chapters below should be relevant now:
+Below are some of my most recent projects and posts.
 
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
-* [Config]{:.heading.flip-title} --- Once Jekyll is running you can start with basic configuration.
-{:.related-posts.faded}
+Otherwise, feel free to look around, stay a while, and listen...
 
-After you've familiarized yourself with Hydejack, you can delete the following folders and files
-containing example content:
+<!--projects-->
 
-~~~
-├── _featured_categories
-│   └── example.md
-├── _projects
-│   └── *
-├── docs
-├── example
-├── licenses
-├── assets
-│   └── img
-│       ├── blog
-│       ├── docs
-│       └── projects
-├── CHANGELOG.md
-├── forms-by-example.md
-├── LICENSE.md
-└── NOTICE.md
-~~~
-
-[documentation]: docs/README.md
-[install]: docs/install.md
-[upgrade]: docs/upgrade.md
-[config]: docs/config.md
+<!--posts-->
